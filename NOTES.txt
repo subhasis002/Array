@@ -1,0 +1,84 @@
+// Array 
+  - an array in java is a  datastructure that stores a collection of element of the same data in a contiguous memory locations,it's a fixed sized ,homogeneous collection of elements,meaning all elements must be in same type.
+    example,
+        int [] a=new inyt [6];
+        it can  store oly integer value,
+        And acces by their indexces.
+// types of array
+    In java,there are severals type of arrays 
+   LIKE-1- one dimensional array[1D]
+         A one dimensional array is a simple array that stores elements of same type array in a single row.
+        example, 
+         int [] a=new int [7];   
+       -2-Multi-dimensional array -
+        A multi-dimensional array is an array of arrays,where each element is itself an array,
+        example,
+        int [][] arr=new int [3][4];
+       -3-jaggeed array
+        a jagged array is a multi-dimensional array where each row has a differrent number of columns.
+    example,
+      int [][] jaggArray=new int [][] {{1,2},{3,4,5},{6}};
+       -4-Arrays of objects 
+        It store object of an array of a particular class.
+       -5-Primitive type array
+       which stores only primitive types ,such as int,double,boolean etc.
+    example,
+       int [] integer=new int [5];
+
+       -6-Arrays of arrays,[2D].
+        where each element is itself an array.
+    example,
+   int [][] arr= new int [3][4];
+//  Array Declaration and initialization :
+     1.Type(int) [] arrayName(arr) = new Type(int) [size];
+     2.Type(int) arrayName(arr)[]=new Type(int)[size];
+      
+    - Array declaration specify the name,type,size of an array.
+    - array sizes must be positive integers,cannot be negative.
+    - array names follow the same naming convension of variable.
+    - array declaration must be modified to declare multiple arrays of the same type
+
+// basic array operation 
+       1. Declaration 
+       Declaring an array variable and specifying its type and  size.
+       2. initialization
+       Assignment values to the element of an array
+       3.indexing
+       Accessing a specific element of an array using its index.
+       4.Assignment
+       Assignment a new value to an exitsing elemet of an array.
+       5.Traverse 
+       iterating through all the elements of an array.
+       for(int i=0;i<arr.length;i++){
+       System.out.println(arr[i]);}
+       6.Serching 
+        Finding a specific element in an array.
+     int target= 10;
+     boolean found =false;
+     for(int i=0;i<arr.length;i++){
+      if (arr[i] == target){
+       found = true;
+       break;
+      }
+     }
+     if(found){
+     System.out.Println("target was found!");
+     else 
+     System.out.Println("not Found");}}
+   7.Sorting
+   Arranging the element in some order(like ascendiong or decending order).
+   Arrays.Sort(arr);
+   8. Insertion
+   9. Deletion
+   10.merging 
+// Array Traversal
+   
+    Array traversal in java refers to the process of iterating throuh the elements of an array.Here are some ways to traverse an array in java.
+ 1.Using for loop 
+ 2.using enhanced for loop/for each loop
+ 3.Using while loop
+ 4.Using Do-while Loop
+ 5.Using java-8 Streams.
+ THIS ARE SOME COMMON WAYS TO TRAVESE AN ARRAY IN JAVA....
+   
+
