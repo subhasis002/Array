@@ -1,0 +1,128 @@
+// Array indexing
+its a process of accesing and manipulating the element of an array using index values,
+INDEXING RULES :
+ 1. Index values start at o
+      The first element of an array is at index 0,the second element is at index 1,so on...,
+  2.Index value should be integers,
+  3.Index value must be in bounds,
+// Accessing Array Elements
+ To acces an array element ,you  use the array name followed by the index value in square brackets[].
+for e,g 
+      int [] score ={10,20,30,40};
+      int score = score [0];
+  o/p will be 10.
+// Modifyinng Array elements:
+ To modify array elements ,you use the array name followed by the index value in square brackets [] and ssign a new value ,
+for e.g
+       int [] arr ={10,20,30,40,50};
+       arr[0]=100;
+if we print arr[0] will be 100.
+// Multi-Dimensional Array indexing :
+  For multi dimensional arrays,you use multiple index values to acces and modify elements.
+for e.g
+    int [][] arr={{1,2,3},{4,5,6},{7,8,9}};
+int element = matrix [1][2];
+element will be  6
+// Common indexing error :
+ 1.ArrayindexOutOfBoundException
+ 2.NullpointerException
+
+ARRAY BOUNDS
+    Array bounds in java refer to a valid range of indices that can be used to access and manipulate the element of an array.
+// Rules :
+  Lower bound:
+         the lower bound of an array is always 0.
+  Upper bound:
+         the upper bound of an array is (array.length-1) .
+  Valid inicates :
+           the valid indicates of an array are o - array.length-1,
+           in between always the range should be.
+1. ArrayIndexOutOfBoundsException.
+  e.g,
+    int [] arr = new int [4];
+    System.out.println(array[4]);
+And it throws ArrayIndexOutOfBoundException
+// Preventing array Bounds Exception
+  To prevent ArrayIndexOutOfBoundsExceptions ,we can use bellow methods 
+   1. check indeces before acces,
+      check if the index is within the valid eange or not.
+ int [] arr=new int[5];
+ innt index=5;
+if (index >= 0 && index <arr.length){
+System.out.println("arr[index]);
+}
+else {
+System.out.println("Index out of bound");
+}
+2. Use loops with valid indices,when iterating over an array using a loop ,make sure to use valid indices,
+int [] arr= new int [5];
+ for (int i=0;i<arr.length;i++){
+System.out.println(score[i]);
+
+By following these methods we can prevent error issue.....
+
+COMMON ARRAY OPERATOR 
+     We have some common operator in java 
+  1. New operator 
+     Used to create a new array.
+{int [] arr = new int [6];}
+  2. Index Operator([])
+  Used to acces and modify array elements 
+  int arr=arr[0];
+  arr[0] =10;
+
+3. Length Property 
+ Used to get the length of an array.
+   int arr[]={1,2,3,4,5};
+   int len=arr.length;
+   System.out.println(len);
+   o/p will be 5;
+4. Assignment Operator(=)
+    arr[0[ = 100;
+5. Comparision Operator (==,!=)
+   Used compared array for equality 
+  int [] arr1 = {1,2,3};
+  int [] arr2 = {1,2,3};
+  if (arr1 == arr2){
+System.out.Println("Array is same element");
+6. Array Copy Operator(=)
+   int arr[] = {1,2,3};
+   int b [] =arr;
+7. Array initialization operator({})
+     Used to initialize an array with values
+   int [] arr= {1,2,3,4,5};
+8. Enhanced for Loop Operator(:) / for Each loop
+   int [] arr= {1,2,3,4};
+   for (int i : arr){
+      System.out.println(i);
+}
+MULTI-DIMENSIONAL ARRAY
+  1. 2D Array
+   int [][] arr = new int [3][4];
+e.g,
+  int [][] arr = {{2,3,4},{3,4,5},{4,7,8}};
+  2. 3D array
+    int [][][] arr = new int [2][3][4];
+e.g,
+    int [][][] arr = {{{1,2,3},{2,3,4}},{{7,8,9},{10,11,12}}};
+  3.n-Dimensional Array
+     int [][][]...arr = new int [][][]...;
+// Accessing Element :
+for (2D) 
+int element = arr[1][2];
+it will be 4.
+for(3D)
+ int element =arr [1][0][2];
+it will be 9.
+
+//PRACTICE
+
+
+ 
+
+    
+
+
+
+
+
